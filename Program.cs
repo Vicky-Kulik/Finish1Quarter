@@ -17,3 +17,17 @@ void GetArrayStringLength3 (string[] array1, string[] array2)
         }
     }
 }
+
+// Создаем метод, который выведет в консоль все элементы получившегося массива, кроме пустых
+
+void PrintFinishArray (string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {  
+        if (array[i] != null)
+        {
+        Console.WriteLine($"Элемент массива с тремя и менее символами: {array[i]}");
+        }
+
+    }
+}

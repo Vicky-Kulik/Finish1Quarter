@@ -51,3 +51,22 @@ string str5 = Console.ReadLine();
 
 string[] array1 = new string [5] { str1, str2, str3, str4, str5};
 string[] array2 = new string [5];
+
+// Вызываем созданные методы и выводим результат
+
+GetArrayStringLength3(array1, array2);
+
+Console.WriteLine(string.Empty);
+
+Console.WriteLine($"Был массив: "+ String.Join(", ", (array1)));
+
+// Если все введеные пользователем строки будут содержать больше 3 символов
+
+if ( str1.Length > 3 && str2.Length > 3 && str3.Length > 3 && str4.Length > 3 && str5.Length > 3)
+{
+    Console.WriteLine($"Все элементы массива имеют более трех символов");
+}
+
+Console.WriteLine(string.Empty);
+
+PrintFinishArray(array2);

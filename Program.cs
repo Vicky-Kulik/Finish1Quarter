@@ -31,3 +31,23 @@ void PrintFinishArray (string[] array)
 
     }
 }
+
+// Пользователь вводит элементы массива в консоль и мы их записываем в массив
+
+Console.WriteLine("Введите первый элемент массива: ");
+string str1 = Console.ReadLine();
+
+Console.WriteLine("Введите второй элемент массива: ");
+string str2 = Console.ReadLine();
+
+Console.WriteLine("Введите третий элемент массива: ");
+string str3 = Console.ReadLine();
+
+Console.WriteLine("Введите четвертый элемент массива: ");
+string str4 = Console.ReadLine();
+
+Console.WriteLine("Введите пятый элемент массива: ");
+string str5 = Console.ReadLine();
+
+string[] array1 = new string [5] { str1, str2, str3, str4, str5};
+string[] array2 = new string [5];
